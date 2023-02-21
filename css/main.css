@@ -72,9 +72,9 @@ a {
 	display: none;
 }
 
-.advantages-content {
+/* .advantages-content {
 	width: 396px;
-}
+} */
 
 /* -------- ADDITIONAL STYLES ----- */
 
@@ -273,10 +273,6 @@ footer {
 }
 
 .footer-content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
 	text-align: center;
 }
 
@@ -286,6 +282,12 @@ footer {
 	width: 268px;
 
 	text-align: start;
+	margin: 0 auto;
+}
+
+.sub-block {
+	display: flex;
+	flex-direction: column;
 }
 
 .footer-logo .logo {
@@ -312,18 +314,19 @@ footer {
 
 .footer-soc-media {
 	display: flex;
+	justify-content: center;
 	gap: 16px;
 }
 
 .sub-input {
-	display: flex;
-	flex-direction: column;
-	gap: 16px;
+	/* display: flex; */
+	/* flex-direction: column;
+	gap: 16px; */
 	align-items: center;
 }
 
 .sub-input input {
-	width: 396px;
+	width: 100%;
 	height: 40px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
@@ -377,8 +380,6 @@ footer {
 
 .menu-toggle,
 .menu-close-btn {
-	min-height: 40px;
-	min-width: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -412,8 +413,7 @@ footer {
 }
 
 .menu-toggle svg {
-	fill: red;
-	display: block;
+	fill: #2e2f42;
 }
 
 /* .menu-container {
@@ -467,7 +467,7 @@ footer {
 }
 
 .menu-container .team-media {
-	gap: 56px;
+	gap: 35px;
 }
 
 .menu-container .team-soc-icon-menu {
@@ -710,10 +710,10 @@ footer {
 	background-color: var(--footer-bgc);
 }
 .business {
-	padding: 188px 0;
+	padding: 112px 0;
 	text-align: center;
 	height: 432px;
-	min-width: 480px;
+	max-width: 480px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -775,7 +775,7 @@ footer {
 	letter-spacing: 0.02em;
 	color: var(--primary-text-color);
 
-	width: 320px;
+	max-width: 320px;
 	margin-bottom: 48px;
 	display: block;
 
@@ -816,8 +816,8 @@ footer {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
 	padding-left: 40px;
 	padding-top: 80px;
 	padding-bottom: 40px;
@@ -862,9 +862,9 @@ footer {
 
 /* --------- CONTAINER FOR ALL ------ */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 428px) {
 	.container {
-		width: 480px;
+		width: 428px;
 	}
 }
 
@@ -987,10 +987,6 @@ footer {
 		gap: 72px 24px;
 	}
 
-	.advantages-content {
-		width: 356px;
-	}
-
 	.teamcards {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -1009,12 +1005,12 @@ footer {
 	}
 
 	.sub-input input {
-		width: 264px;
+		width: 100%;
 		margin: 0;
 	}
-	.sub-input {
+	/* .sub-input {
 		flex-direction: row;
-	}
+	} */
 	.btn-subscribe {
 		margin: 0;
 	}
